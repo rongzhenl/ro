@@ -12,15 +12,36 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="">
+    <meta name="description" content="ubuntu 下创建桌面快捷方式
+基本概念
+Linux 系统中的Desktop Entry 文件以desktop为后缀名。Desktop Entry 文件是 Linux 桌面系统中用于描述程序启动配置信息的文件。进入/usr/share/applications 目录，可见如下图所示的各类软件图标如下图所示其都是以desktop为结尾的文件格式
+
+
+如何新建
+
+vim /usr/share/app">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="rongzhenl">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:description" content="ubuntu 下创建桌面快捷方式
+基本概念
+Linux 系统中的Desktop Entry 文件以desktop为后缀名。Desktop Entry 文件是 Linux 桌面系统中用于描述程序启动配置信息的文件。进入/usr/share/applications 目录，可见如下图所示的各类软件图标如下图所示其都是以desktop为结尾的文件格式
+
+
+如何新建
+
+vim /usr/share/app">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="rongzhenl">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="ubuntu 下创建桌面快捷方式
+基本概念
+Linux 系统中的Desktop Entry 文件以desktop为后缀名。Desktop Entry 文件是 Linux 桌面系统中用于描述程序启动配置信息的文件。进入/usr/share/applications 目录，可见如下图所示的各类软件图标如下图所示其都是以desktop为结尾的文件格式
+
+
+如何新建
+
+vim /usr/share/app">
 
     
     <meta name="author" content="lizhen">
@@ -37,7 +58,7 @@
     <link rel="alternate" type="application/rss+xml" title="rongzhenl" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/2017/12/22/ubuntu/"/>
 
                  
 </head>
@@ -142,69 +163,74 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-12-22T07:40:28.615Z" class="post-list__meta--date date">2017-12-22</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="ubuntu-下创建桌面快捷方式"><a href="#ubuntu-下创建桌面快捷方式" class="headerlink" title="ubuntu 下创建桌面快捷方式"></a>ubuntu 下创建桌面快捷方式</h1><ul>
+<li>基本概念<blockquote>
+<p>Linux 系统中的Desktop Entry 文件以desktop为后缀名。Desktop Entry 文件是 Linux 桌面系统中用于描述程序启动配置信息的文件。<br>进入/usr/share/applications 目录，可见如下图所示的各类软件图标<br>如下图所示<br><img src="002.png" alt="Image text"><br>其都是以desktop为结尾的文件格式<br><img src="001.png" alt="Image text"></p>
+</blockquote>
+</li>
+<li>如何新建<blockquote>
+<ol>
+<li><code>vim /usr/share/applications/eclipse.desktop</code></li>
+<li>编辑eclipse.desktop<br><code>[Desktop Entry]
+Encoding=UTF-8
+Name=eclipse
+Comment=Eclipse IDE
+Exec=/usr/local/eclipse/eclipse  #根据软件的具体执行路径修改
+Icon=/usr/local/eclipse/icon.xpm  #根据软件的具体执行路径修改
+Terminal=false  #软件打开时是否启动终端
+StartupNotify=false
+Type=Application
+Categories=Application;Development;</code></li>
+<li>进入<code>/usr/share/applications</code> 将相应图标右键复制到桌面即可</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/12/21/usehexo/" title=""></a></h2>
+                <p class="excerpt">
+                
+                写在前面
+首先这篇文章是为自己而写的，因为自己的邋遢。一直没有一个良好的整理文件整理思路的习惯。尝试过桌面备份很多软件，包括坚果云，百度云等等。其实效果都不太理想，随着备份文件夹的不断增多，内容也变得越来越凌乱了，直到最终全部清空，一趟下来其实并没有什么实际效果。z这是我第一次使用atom编辑器，第
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-12-21T03:30:10.398Z" class="post-list__meta--date date">2017-12-21</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2017/12/21/usehexo/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/12/22/ubuntu/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      ubuntu 下创建桌面快捷方式
-基本概念
-Linux 系统中的Desktop Entry 文件以desktop为后缀名。Desktop Entry 文件是 Linux 桌面系统中用于描述程序启动配置信息的文件。进入/usr/share/applications 目录，可见如下图所示的各类软件图标如下图所示其都是以desktop为结尾的文件格式
+</section>
 
-
-如何新建
-
-vim /usr/share/app
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-12-22T07:40:28.615Z" class="post-list__meta--date date">2017-12-22</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2017/12/22/ubuntu/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/12/21/usehexo/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      写在前面
-首先这篇文章是为自己而写的，因为自己的邋遢。一直没有一个良好的整理文件整理思路的习惯。尝试过桌面备份很多软件，包括坚果云，百度云等等。其实效果都不太理想，随着备份文件夹的不断增多，内容也变得越来越凌乱了，直到最终全部清空，一趟下来其实并没有什么实际效果。z这是我第一次使用atom编辑器，第一次写ｍｄ，也是在ｈｅｘｏ下的第一篇文章。
-
-良好的开始
-我希望这篇博客只是开始，而不是结束。我希望
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-12-21T03:30:10.398Z" class="post-list__meta--date date">2017-12-21</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2017/12/21/usehexo/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span class="footer__copyright">
