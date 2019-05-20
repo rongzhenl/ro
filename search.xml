@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[2_test]]></title>
+    <url>%2F2019%2F05%2F20%2F2-test%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[使用hexo搭建个人博客]]></title>
+    <url>%2F2019%2F05%2F17%2F1_hexo%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[安装hexo1npm install -g hexo-cli 建站123hexo init &lt;folder&gt;cd &lt;floder&gt;npm install 配置显示图片hexo中的图片需要根目录下的固定文件夹下存放，使用编辑器编辑时候非常不方便，为了解决这个问题首先，安装插件 1npm install hexo-asset-image --save 此时，通过hexo new 博客名 来创建新的博客时会在博客的同级目录下生成一个同名文件夹，该文件夹便用于存放该博客的图片。 但是，由于博客需要采用相对路径来书写路径才能在生成时准确定位到图片的位置，因此在编辑时写入相对路径无法在编辑器中正常显示在网页中正常，在编辑时写入绝对路径在编辑器中显示正常但在网页中无法显示，那么有没有一种可以兼顾编辑器与网页的方法呢？答案是可能的。 首先，修改根目录下的_config.yml文件 1post_asset_floder: true 修改scaffolds-&gt;post.md文件中，增加配置 1typora-copy-images-to: &#123;&#123; title &#125;&#125; 在Typora中点击 编辑-&gt;图片工具-&gt;设置图片根目录，将图片根目录设置到同名文件夹即可。或者直接在头部中写入。 1typora-root-url：同名文件夹 分类和标签的创建首先，使用hexo new page categories 创建一个分类文件，该分类文件夹处于_post的同级目录下，修改该文件 12title：分类type：&quot;categories&quot; 编辑主题下配置文件，将menu中的categories：/categories注释去除，首先标签时同理]]></content>
+      <categories>
+        <category>技能</category>
+        <category>软件安装</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+</search>
