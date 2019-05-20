@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-20T03:45:39.077Z</updated>
+  <updated>2019-03-07T07:10:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,72 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2_test</title>
-    <link href="http://yoursite.com/2019/05/20/2-test/"/>
-    <id>http://yoursite.com/2019/05/20/2-test/</id>
-    <published>2019-05-20T03:29:54.000Z</published>
-    <updated>2019-05-20T03:45:39.077Z</updated>
+    <title></title>
+    <link href="http://yoursite.com/2019/05/20/4_%E8%87%AA%E5%AD%A6%E5%A4%A7%E7%BA%B2/"/>
+    <id>http://yoursite.com/2019/05/20/4_自学大纲/</id>
+    <published>2019-05-20T14:05:15.902Z</published>
+    <updated>2019-03-07T07:10:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2019/05/20/2-test/676819c5f787c3076048d5ee51926306d3b4610b.jpg" alt="676819c5f787c3076048d5ee51926306d3b4610b"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="自学大纲"><a href="#自学大纲" class="headerlink" title="自学大纲"></a>自学大纲</h2><ol><li><p>Tools</p><ul><li>Linux在线课程：网易云课堂（Linux入门教程），图书：Linux命令行与Shell脚本变成大全（看shell编程部分），鸟哥的Linux私房菜</li><li>Intellij IDEA（熟悉IDEA的操作）</li><li>Git</li><li>Maven</li></ul></li><li><p>java基础</p><p>推荐书籍：java核心技术（卷一）</p><p>主要看以下内容：</p><ul><li>第3章：Java基本的程序设计结构</li><li>第4章：对象与类</li><li>第5章：继承</li><li>第6章：接口与内部类</li><li>第13章：集合</li></ul></li><li><p>Guava基础</p><p>Google Guava官方教程中文版<a href="http://ifeve.com/google-guava/" target="_blank" rel="noopener">http://ifeve.com/google-guava/</a></p><p>重点：</p><ul><li>基本工具</li><li>集合</li><li>字符串处理</li><li>IO和缓存</li></ul></li><li><p>MySql数据库</p><ul><li>数据库的基础</li><li><a href="http://www.imooc.com数据库分类下：与mysql数据库的零距离接触" target="_blank" rel="noopener">http://www.imooc.com数据库分类下：与mysql数据库的零距离接触</a></li></ul></li><li><p>web基础</p><ul><li>http</li><li>json（<a href="http://www.w3shool.com.cn/json/）" target="_blank" rel="noopener">http://www.w3shool.com.cn/json/）</a></li><li>servlet：工作原理解析（<a href="http://www.ibm.com/developerworks/cn/java/j-lo-servlet/#ibm-pcon）,慕课视频（JAVA遇见HTML-JSP篇）" target="_blank" rel="noopener">http://www.ibm.com/developerworks/cn/java/j-lo-servlet/#ibm-pcon）,慕课视频（JAVA遇见HTML-JSP篇）</a></li><li>JSP：慕课课程（JAVA遇见HTML—JSP篇，JSP常用标签）</li><li>jdbc:慕课网课程（JDBC之“对面的女孩看过来”，JDBC之“对面的女该走过来”）</li></ul></li><li><p>framework</p><ul><li>Spring</li><li>Mybatis</li></ul></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/2019/05/20/2-test/676819c5f787c3076048d5ee51926306d3b4610b.jpg&quot; alt=&quot;676819c5f787c3076048d5ee51926306d3b4610b&quot;&gt;&lt;/p&gt;
-
+        &lt;h2 id=&quot;自学大纲&quot;&gt;&lt;a href=&quot;#自学大纲&quot; class=&quot;headerlink&quot; title=&quot;自学大纲&quot;&gt;&lt;/a&gt;自学大纲&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Tools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux在线课程：网易云课堂（Linux入门教程），图书：Linu
       
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/05/20/2_llvm%E7%BC%96%E8%AF%91/"/>
+    <id>http://yoursite.com/2019/05/20/2_llvm编译/</id>
+    <published>2019-05-20T14:04:59.470Z</published>
+    <updated>2019-05-08T09:37:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果想clang/clang++自动使用libc++库，那么在编译clang时需要指定DCLANG_DEFAULT_CXX_STDLIB为libc++<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cmake -G &quot;Unix Makefiles&quot; -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCLANG_DEFAULT_CXX_STDLIB=libc++ -DCMAKE_BUILD_TYPE=&quot;Release&quot; ..</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p><p>当cmake时出现CMake Error at cmake/modules/AddLLVM.cmake:1163 (add_custom_target):<br>  add_custom_target cannot create target “check-llvm-bindings-ocaml” because<br>  another target with the same name already exists.时候 尝试加入 -DLLVM_INCLUDE_TESTS=OFF来解决</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;如果想clang/clang++自动使用libc++库，那么在编译clang时需要指定DCLANG_DEFAULT_CXX_STDLIB为libc++&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutt
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3_廖雪峰学习视频</title>
+    <link href="http://yoursite.com/2019/05/20/3-%E5%BB%96%E9%9B%AA%E5%B3%B0%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91/"/>
+    <id>http://yoursite.com/2019/05/20/3-廖雪峰学习视频/</id>
+    <published>2019-05-20T13:48:18.000Z</published>
+    <updated>2019-05-20T13:50:57.466Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2019年5月20日"><a href="#2019年5月20日" class="headerlink" title="2019年5月20日"></a>2019年5月20日</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;2019年5月20日&quot;&gt;&lt;a href=&quot;#2019年5月20日&quot; class=&quot;headerlink&quot; title=&quot;2019年5月20日&quot;&gt;&lt;/a&gt;2019年5月20日&lt;/h3&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="学习视频" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91/"/>
+    
+      <category term="java基础" scheme="http://yoursite.com/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   

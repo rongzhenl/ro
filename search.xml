@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[2_test]]></title>
-    <url>%2F2019%2F05%2F20%2F2-test%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title></title>
+    <url>%2F2019%2F05%2F20%2F4_%E8%87%AA%E5%AD%A6%E5%A4%A7%E7%BA%B2%2F</url>
+    <content type="text"><![CDATA[自学大纲 Tools Linux在线课程：网易云课堂（Linux入门教程），图书：Linux命令行与Shell脚本变成大全（看shell编程部分），鸟哥的Linux私房菜 Intellij IDEA（熟悉IDEA的操作） Git Maven java基础 推荐书籍：java核心技术（卷一） 主要看以下内容： 第3章：Java基本的程序设计结构 第4章：对象与类 第5章：继承 第6章：接口与内部类 第13章：集合 Guava基础 Google Guava官方教程中文版http://ifeve.com/google-guava/ 重点： 基本工具 集合 字符串处理 IO和缓存 MySql数据库 数据库的基础 http://www.imooc.com数据库分类下：与mysql数据库的零距离接触 web基础 http json（http://www.w3shool.com.cn/json/） servlet：工作原理解析（http://www.ibm.com/developerworks/cn/java/j-lo-servlet/#ibm-pcon）,慕课视频（JAVA遇见HTML-JSP篇） JSP：慕课课程（JAVA遇见HTML—JSP篇，JSP常用标签） jdbc:慕课网课程（JDBC之“对面的女孩看过来”，JDBC之“对面的女该走过来”） framework Spring Mybatis]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2019%2F05%2F20%2F2_llvm%E7%BC%96%E8%AF%91%2F</url>
+    <content type="text"><![CDATA[如果想clang/clang++自动使用libc++库，那么在编译clang时需要指定DCLANG_DEFAULT_CXX_STDLIB为libc++1234cmake -G &quot;Unix Makefiles&quot; -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCLANG_DEFAULT_CXX_STDLIB=libc++ -DCMAKE_BUILD_TYPE=&quot;Release&quot; ..makemake install 当cmake时出现CMake Error at cmake/modules/AddLLVM.cmake:1163 (add_custom_target): add_custom_target cannot create target “check-llvm-bindings-ocaml” because another target with the same name already exists.时候 尝试加入 -DLLVM_INCLUDE_TESTS=OFF来解决]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[3_廖雪峰学习视频]]></title>
+    <url>%2F2019%2F05%2F20%2F3-%E5%BB%96%E9%9B%AA%E5%B3%B0%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%2F</url>
+    <content type="text"><![CDATA[2019年5月20日]]></content>
+      <tags>
+        <tag>学习视频</tag>
+        <tag>java基础</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[使用hexo搭建个人博客]]></title>
